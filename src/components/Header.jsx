@@ -23,13 +23,13 @@ export function Header() {
           <button className="flex items-center gap-1 text-sm text-white/90 hover:text-white">
             Services <ChevronDown className="h-4 w-4" />
           </button>
-          <a href="/pricing" className="text-sm text-white/90 hover:text-white">
+          <a href="/#" className="text-sm text-white/90 hover:text-white">
             Pricing
           </a>
-          <a href="/about" className="text-sm text-white/90 hover:text-white">
+          <a href="/#" className="text-sm text-white/90 hover:text-white">
             About Us
           </a>
-          <a href="/testimonials" className="text-sm text-white/90 hover:text-white">
+          <a href="/#" className="text-sm text-white/90 hover:text-white">
             Testimonials
           </a>
           <button className="flex items-center gap-1 text-sm text-white/90 hover:text-white">
