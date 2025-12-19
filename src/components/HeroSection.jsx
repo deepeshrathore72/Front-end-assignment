@@ -1,62 +1,59 @@
 import { Button } from './ui/Button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, CircleArrowRight } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="pt-32 pb-20 px-6 bg-linear-to-b from-[#e8ecf1] to-[#f5f7fa]">
+    <section className="pt-40 pb-16 px-6 bg-linear-to-b from-[#e8f0f8] to-[#f0f5fa]">
       <div className="mx-auto max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="mb-6">
+            <div className="mb-4">
               <span className="text-sm text-gray-500">Services</span>
-              <span className="mx-2 text-gray-400">›</span>
-              <span className="font-medium text-gray-900">IT Health Check</span>
+              <span className="mx-2.5 text-gray-400 text-lg">›</span>
+              <span className="font-semibold text-gray-900 text-sm">IT Health Check</span>
             </div>
 
-            <div className="inline-block px-4 py-1.5 mb-6 text-xs font-medium text-blue-600 bg-blue-100/80 rounded-full border border-blue-200">
+            <div className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold text-blue-600 bg-blue-100/70 rounded-full border border-blue-300/50">
               IT HEALTH CHECK
             </div>
 
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-6 leading-tight text-gray-900 tracking-tight">
-              <span>Know Exactly</span>
-              <br />
-              <span className="relative inline-block">
+            <h1 className="text-5xl lg:text-6xl font-extrabold mb-7 leading-[1.15] text-gray-900">
+              <span className="block">Know Exactly</span>
+              <span className="block relative">
                 Where Your IT
-                <span className="absolute bottom-1 left-0 right-0 h-3 bg-blue-200/70 -z-10 rounded"></span>
+                <span className="absolute bottom-1.5 left-0 right-0 h-3 bg-blue-300/50 -z-10"></span>
               </span>
-              <br />
-              <span>Stands.</span>
+              <span className="block">Stands.</span>
             </h1>
 
-            <p className="text-base lg:text-lg mb-8 leading-relaxed">
-              <span className="text-gray-600 font-normal">A </span>
-              <span className="font-semibold text-gray-900">2-3 week assessment</span>
-              <span className="text-gray-600 font-normal"> giving </span>
-              <span className="font-semibold text-gray-900">healthcare</span>
+            <p className="text-lg mb-8 leading-relaxed text-gray-700">
+              <span className="font-normal">A </span>
+              <span className="font-bold text-gray-900">2-3 week assessment</span>
+              <span className="font-normal"> giving </span>
+              <span className="font-bold text-gray-900">healthcare</span>
               <br />
-              <span className="font-semibold text-gray-900">leaders clear, </span>
-              <span className="font-semibold text-gray-900">actionable insight </span>
-              <span className="text-gray-600 font-normal">into </span>
-              <span className="font-semibold text-gray-900">their</span>
+              <span className="font-bold text-gray-900">leaders clear</span>
+              <span className="font-normal">, </span>
+              <span className="font-bold text-gray-900">actionable insight</span>
+              <span className="font-normal"> into </span>
+              <span className="font-bold text-gray-900">their</span>
               <br />
-              <span className="font-semibold text-gray-900">technology </span>
-              <span className="text-gray-600 font-normal"> </span>
-              <span className="font-semibold text-gray-900">minus the jargon</span>
-              <span className="text-gray-600 font-normal">.</span>
+              <span className="font-bold text-gray-900">technology</span>
+              <span className="font-normal"> minus the jargon</span>
             </p>
 
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white rounded-full px-8 py-6 text-base font-medium shadow-lg hover:shadow-xl transition-all">
-              Take Assessment <ArrowRight className="ml-2 h-5 w-5" />
+            <Button size="none" className="inline-flex items-center gap-3 bg-blue-500 hover:bg-blue-600 text-white rounded-full px-12 py-4 text-sm font-semibold shadow-lg hover:shadow-xl transition-all">
+              <span className='text-white/90'>Take Assessment</span> <CircleArrowRight className="size-5" />
             </Button>
           </div>
 
-          <div className="relative max-w-md lg:max-w-lg mx-auto">
-            <div className="absolute inset-0 bg-linear-to-br from-blue-200/30 to-blue-300/30 rounded-[2.5rem] blur-3xl"></div>
-            <div className="relative bg-blue-100/40 rounded-[2.5rem] p-6 border border-blue-200/60 backdrop-blur-sm">
+          <div className="relative max-w-md ml-auto mr-0">
+            <div className="absolute -inset-8 bg-linear-to-br from-blue-200/40 to-blue-300/30 rounded-[3.5rem] blur-3xl"></div>
+            <div className="relative bg-linear-to-br from-blue-100/50 to-blue-200/40 rounded-[3rem] p-6 border-2 border-white/60 backdrop-blur-sm shadow-xl">
               <img
                 src="/hero-image.png"
                 alt="Person writing checklist"
-                className="rounded-2xl w-full h-auto object-cover"
+                className="rounded-4xl w-full h-auto object-cover shadow-lg"
               />
             </div>
           </div>
