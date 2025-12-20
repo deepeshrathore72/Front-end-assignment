@@ -3,7 +3,15 @@ import { ArrowRight, CircleArrowRight } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="pt-40 pb-16 px-6 bg-linear-to-b from-[#e8f0f8] to-[#f0f5fa]">
+    <section className="pt-40 pb-16 px-6 bg-linear-to-b from-[#e8f0f8] to-[#f0f5fa]"
+      style={{
+              backgroundImage: `
+                linear-gradient(to right, rgba(200, 210, 230, 0.3) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(200, 210, 230, 0.3) 1px, transparent 1px)
+              `,
+              backgroundSize: '36px 36px'
+            }}
+    >
       <div className="mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -18,12 +26,24 @@ export function HeroSection() {
             </div>
 
             <h1 className="text-5xl lg:text-6xl font-extrabold mb-7 leading-[1.15] text-gray-900">
-              <span className="block">Know Exactly</span>
-              <span className="block relative">
-                Where Your IT
-                <span className="absolute bottom-1.5 left-0 right-0 h-3 bg-blue-300/50 -z-10"></span>
+              <span className="block">
+                <span className="relative inline-block">
+                  Know Exactly
+                  <span className="absolute bottom-0.5 left-0 right-9 h-2 bg-blue-400/90 blur-[2px]"></span>
+                </span>
               </span>
-              <span className="block">Stands.</span>
+              <span className="block">
+                <span className="relative inline-block">
+                  Where Your IT
+                  <span className="absolute bottom-0.5 left-0 right-3 h-2 bg-blue-400/90 blur-[2px]"></span>
+                </span>
+              </span>
+              <span className="block">
+                <span className="relative inline-block">
+                  Stands.
+                  <span className="absolute bottom-0.5 left-0 right-3 h-2 bg-blue-400/90 blur-[2px]"></span>
+                </span>
+              </span>
             </h1>
 
             <p className="text-lg mb-8 leading-relaxed text-gray-700">
