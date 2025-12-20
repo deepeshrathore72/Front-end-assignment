@@ -2,11 +2,18 @@ import { Button } from './ui/Button';
 
 export function CTASection() {
   return (
-    <section className="py-16 px-6 bg-linear-to-b from-[#e8ecf1] to-[#0a1a2e]">
-      <div className="mx-auto max-w-5xl">
-        <div className="relative overflow-hidden rounded-[3rem] bg-linear-to-br from-[#4a9ff5] via-[#3b8ed8] to-[#2d7ec4] p-12 lg:p-16 text-center shadow-2xl">
-          <div className="absolute inset-0 bg-linear-to-b from-transparent via-blue-600/20 to-blue-900/30"></div>
-
+    <section className="py-16 px-6 bg-linear-to-b from-[#e8ecf1] to-[#0d2441]">
+      <div className="mx-auto max-w-6xl">
+        <div 
+          className="relative overflow-hidden rounded-[3rem] p-12 lg:p-16 text-center shadow-2xl"
+          style={{
+            backgroundImage: `
+              radial-gradient(circle, rgba(255, 255, 255, 0.15) 1.5px, transparent 1px),
+              linear-gradient(to bottom, #4a9ff5, #5aabf7, #7bbffa)
+            `,
+            backgroundSize: '24px 24px, 100% 100%'
+          }}
+        >
           <div className="relative z-10">
             <div className="inline-block px-4 py-1.5 mb-6 text-xs font-medium text-white bg-white/20 rounded-full border border-white/40 backdrop-blur-sm">
               From a CEO

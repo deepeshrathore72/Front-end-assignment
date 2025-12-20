@@ -29,19 +29,19 @@ export function HeroSection() {
               <span className="block">
                 <span className="relative inline-block">
                   Know Exactly
-                  <span className="absolute bottom-0.5 left-0 right-9 h-2 bg-blue-400/90 blur-[2px]"></span>
+                  <span className="absolute bottom-0.5 left-0 right-9 h-1.5 bg-blue-400/90 blur-[2px]"></span>
                 </span>
               </span>
               <span className="block">
                 <span className="relative inline-block">
                   Where Your IT
-                  <span className="absolute bottom-0.5 left-0 right-3 h-2 bg-blue-400/90 blur-[2px]"></span>
+                  <span className="absolute bottom-0.5 left-0 right-3 h-1.5 bg-blue-400/90 blur-[2px]"></span>
                 </span>
               </span>
               <span className="block">
                 <span className="relative inline-block">
                   Stands.
-                  <span className="absolute bottom-0.5 left-0 right-3 h-2 bg-blue-400/90 blur-[2px]"></span>
+                  <span className="absolute bottom-0.5 left-0 right-3 h-1.5 bg-blue-400/90 blur-[2px]"></span>
                 </span>
               </span>
             </h1>

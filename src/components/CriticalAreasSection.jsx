@@ -66,12 +66,12 @@ export function CriticalAreasSection() {
           <h2 className="text-3xl lg:text-4xl xl:text-5xl font-extrabold mb-4 tracking-tight text-gray-900">
             <span className="relative inline-block">
               #6 Critical Areas
-              <span className="absolute -bottom-1 left-0 right-0 h-2 bg-blue-400/70 blur-[2px]"></span>
+              <span className="absolute -bottom-1 left-0 right-0 h-1.5 bg-blue-400/90 blur-[2px]"></span>
             </span>{" "}
             <span className="text-gray-400 font-medium">We</span>{" "}
             <span className="relative inline-block">
               Examine.
-              <span className="absolute -bottom-1 left-0 right-1 h-2 bg-blue-400/70 blur-[2px]"></span>
+              <span className="absolute -bottom-1 left-0 right-1 h-1.5 bg-blue-400/90 blur-[2px]"></span>
             </span>
           </h2>
 

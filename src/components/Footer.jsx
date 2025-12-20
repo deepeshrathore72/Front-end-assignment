@@ -3,64 +3,58 @@ import { Linkedin, Facebook, Instagram, Twitter } from 'lucide-react';
 export function Footer() {
   return (
     <footer className="bg-[#0a1628] text-white px-6 py-16">
-      <div className="mx-auto max-w-7xl">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+      <div className="mx-auto max-w-4xl">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-8 mb-12">
           {/* Brand */}
-          <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="relative">
+          <div className="lg:col-span-2 lg:row-span-2">
+            <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity mb-3">
+              <div className="flex items-center gap-3">
                 <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center">
-                  <svg viewBox="0 0 40 40" className="h-8 w-8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20" cy="20" r="18" fill="#0a1628" />
-                    <path
-                      d="M20 10 L20 30 M15 15 L20 20 L25 15 M15 25 L20 20 L25 25"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                    />
+                  <svg viewBox="0 0 24 24" className="h-5 w-5 text-[#0f1f33]" fill="currentColor">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                   </svg>
                 </div>
+                <div className="text-white">
+                  <div className="text-lg font-bold tracking-[0.15em]">WENDIGO</div>
+                  <div className="text-[10px] tracking-[0.25em] opacity-60 -mt-0.5">ADVISORS</div>
+                </div>
               </div>
-              <div className="text-white">
-                <div className="text-xl font-bold tracking-wide">WENDIGO</div>
-                <div className="text-[10px] tracking-[0.2em] opacity-60">ADVISORS</div>
-              </div>
-            </div>
-            <p className="text-sm text-white/60 mb-6 leading-relaxed max-w-xs">
+          </a>
+            <p className="text-xs text-white/60 mb-6 leading-relaxed max-w-xs">
               Fractional CIO Services & Strategic IT Advisory for Healthcare Organizations
             </p>
             <div className="flex gap-3">
               <a
                 href="#"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                className="w-8 h-8 flex items-center justify-center text-white/80 hover:text-white transition-colors"
               >
-                <Linkedin className="h-4 w-4" />
+                <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                className="w-8 h-8 flex items-center justify-center text-white/80 hover:text-white transition-colors"
               >
-                <Facebook className="h-4 w-4" />
+                <Facebook className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                className="w-8 h-8 flex items-center justify-center text-white/80 hover:text-white transition-colors"
               >
-                <Instagram className="h-4 w-4" />
+                <Instagram className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                className="w-8 h-8 flex items-center justify-center text-white/80 hover:text-white transition-colors"
               >
-                <Twitter className="h-4 w-4" />
+                <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
 
           {/* Services */}
-          <div>
-            <h3 className="font-bold text-sm mb-4 tracking-wide">SERVICES</h3>
-            <ul className="space-y-3 text-sm text-white/60">
+          <div className="text-right">
+            <h3 className="font-bold text-xs mb-3 tracking-[0.15em]">SERVICES</h3>
+            <ul className="space-y-2 text-xs text-white/60">
               <li>
                 <a href="#" className="hover:text-white transition-colors">
                   Fractional CIO
@@ -80,9 +74,9 @@ export function Footer() {
           </div>
 
           {/* Resources */}
-          <div>
-            <h3 className="font-bold text-sm mb-4 tracking-wide">RESOURCES</h3>
-            <ul className="space-y-3 text-sm text-white/60">
+          <div className="text-right">
+            <h3 className="font-bold text-xs mb-3 tracking-[0.15em]">RESOURCES</h3>
+            <ul className="space-y-2 text-xs text-white/60">
               <li>
                 <a href="#" className="hover:text-white transition-colors">
                   Case Studies
@@ -98,49 +92,53 @@ export function Footer() {
                   Healthcare IT Guides
                 </a>
               </li>
+            </ul>
+          </div>
+
+          {/* About - below Services */}
+          <div className="text-right">
+            <h3 className="font-bold text-xs mb-3 tracking-[0.15em]">ABOUT</h3>
+            <ul className="space-y-2 text-xs text-white/60">
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Templates & Tools
+                  Our Story
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Team
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Privacy Policy
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Company */}
-          <div>
-            <h3 className="font-bold text-sm mb-4 tracking-wide">COMPANY</h3>
-            <ul className="space-y-3 text-sm text-white/60">
+          {/* Contact - below Resources */}
+          <div className="text-right">
+            <h3 className="font-bold text-xs mb-3 tracking-[0.15em]">CONTACT</h3>
+            <ul className="space-y-2 text-xs text-white/60">
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  About
+                  Email
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Contact
+                  Phone
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
-            <p>© 2024 Wendigo Advisors. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Terms of Service
-              </a>
-            </div>
-          </div>
+        <div className="border-t border-white/10 pt-7 pb-none">
+          <p className="text-center text-xs text-white/50">
+            © Copyright 2025, All Rights Reserved by Wendigo Advisors.
+          </p>
         </div>
       </div>
     </footer>

@@ -19,21 +19,21 @@ export function ProcessSection() {
             <span className="text-gray-400 font-medium">A </span>
             <span className="relative inline-block">
               Simple
-              <span className="absolute bottom-0 left-0 right-0 h-2 bg-blue-400/70 blur-[2px]"></span>
+              <span className="absolute bottom-0 left-0 right-0 h-1.5 bg-blue-400/90 blur-[2px]"></span>
             </span>
             <span>, </span>
             <span className="relative inline-block">
               Non-Disru
-              <span className="absolute bottom-0 left-2 right-1 h-2 bg-blue-400/70 blur-[2px]"></span>
+              <span className="absolute bottom-0 left-2 right-1 h-1.5 bg-blue-400/90 blur-[2px]"></span>
             </span>
             <span className="relative inline-block">
               ptive 3-Week
-              <span className="absolute bottom-0 left-4 right-0 h-2 bg-blue-400/70 blur-[2px]"></span>
+              <span className="absolute bottom-0 left-4 right-0 h-1.5 bg-blue-400/90 blur-[2px]"></span>
             </span>
             <br />
             <span className="relative inline-block">
               Process
-              <span className="absolute bottom-0 left-0 right-0 h-2 bg-blue-400/70 blur-[2px]"></span>
+              <span className="absolute bottom-0 left-0 right-0 h-1.5 bg-blue-400/90 blur-[2px]"></span>
             </span>
           </h2>
 
