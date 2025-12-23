@@ -101,10 +101,61 @@ export function CriticalAreasSection() {
                   backgroundSize: '24px 24px'
                 }}
               >
-                <div className="absolute -top-5 right-8 bg-blue-100/80 rounded-xl p-3.5 border border-blue-200/50 shadow-sm">
-                  <Icon className="h-6 w-6 text-gray-800" strokeWidth={1.5} />
+                <div className="absolute top-6 right-6">
+                  <div className="relative">
+                  <svg
+                    className="absolute w-24 h-24"
+                    style={{ left: "-16px", top: "-16px" }}
+                    viewBox="0 0 96 96"
+                  >
+                    {/* Top-left: emerges from top-left of icon, goes up, curves left */}
+                    <path
+                      d="M 28 16 Q 28 8, 8 8"
+                      fill="none"
+                      stroke="rgb(100, 150, 200)"
+                      strokeWidth="1.5"
+                      strokeDasharray="6 4"
+                      strokeLinecap="round"
+                    />
+
+                    {/* Top-right: emerges from top-right of icon, goes up, curves right */}
+                    <path
+                      d="M 68 16 Q 68 8, 88 8"
+                      fill="none"
+                      stroke="rgb(100, 150, 200)"
+                      strokeWidth="1.5"
+                      strokeDasharray="6 4"
+                      strokeLinecap="round"
+                    />
+
+                    {/* Bottom-left: emerges from bottom-left of icon, goes down, curves left */}
+                    <path
+                      d="M 28 80 Q 28 88, 8 88"
+                      fill="none"
+                      stroke="rgb(100, 150, 200)"
+                      strokeWidth="1.5"
+                      strokeDasharray="6 4"
+                      strokeLinecap="round"
+                    />
+
+                    {/* Bottom-right: emerges from bottom-right of icon, goes down, curves right */}
+                    <path
+                      d="M 68 80 Q 68 88, 88 88"
+                      fill="none"
+                      stroke="rgb(100, 150, 200)"
+                      strokeWidth="1.5"
+                      strokeDasharray="6 4"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+
+                  <div className="bg-blue-100/80 rounded-2xl p-4 border border-blue-200/50 shadow-sm relative z-10">
+                    <Icon className="h-7 w-7 text-gray-800" strokeWidth={1.5} />
+                  </div>
                 </div>
-                <div className="pt-6">
+
+                </div>
+                <div className="pr-20">
                   <h3 className="text-xl font-bold mb-2 text-gray-900">{area.title}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">{area.description}</p>
                 </div>

@@ -6,8 +6,8 @@ export function HeroSection() {
     <section className="pt-40 pb-16 px-6 bg-linear-to-b from-[#e8f0f8] to-[#f0f5fa]"
       style={{
               backgroundImage: `
-                linear-gradient(to right, rgba(200, 210, 230, 0.3) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(200, 210, 230, 0.3) 1px, transparent 1px)
+                linear-gradient(to right, rgba(200, 210, 230, 0.4) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(200, 210, 230, 0.4) 1px, transparent 1px)
               `,
               backgroundSize: '36px 36px'
             }}
@@ -68,6 +68,13 @@ export function HeroSection() {
           </div>
 
           <div className="relative max-w-md ml-auto mr-0">
+            {/* Background shape behind Week 1 and Week 3 */}
+            <div 
+              className="hidden lg:block absolute -top-35 -right-30 w-70 h-150 rounded-3xl -z-10"
+              style={{
+                background: 'radial-gradient(circle at center, rgba(147, 197, 253, 0.5) 0%, rgba(147, 197, 253, 0.2) 40%, rgba(147, 197, 253, 0) 70%)'
+              }}
+            ></div>
             <div className="absolute -inset-8 bg-linear-to-br from-blue-200/40 to-blue-300/30 rounded-[3.5rem] blur-3xl"></div>
             <div className="relative bg-linear-to-br from-blue-100/50 to-blue-200/40 rounded-[3rem] p-6 border-2 border-white/60 backdrop-blur-sm shadow-xl">
               <img
